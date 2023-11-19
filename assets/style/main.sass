@@ -1,0 +1,31 @@
+@use "_variables.sass" as v
+
+body
+    background-color: v.$bg-color
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+
+.piano-head
+    @include v.piano-text (v.$piano-head-color, 700, 50px, v.$piano-head-family)
+
+.piano-p
+    @include v.piano-text (v.$piano-p-color, 500, 20px , v.$piano-p-family)
+    
+main
+    background-color: v.$piano-bg-color
+    height: 60vh
+    width: 80%
+    padding: 50px
+    border-radius: 33px
+
+.piano-info
+    display: flex
+    width: 100%
+    justify-content: space-between
+
+#volume
+    height: 100%
+    width: 90px
+    border-radius: 100%

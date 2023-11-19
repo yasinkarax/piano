@@ -1,0 +1,39 @@
+body {
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.piano-head {
+  color: #6d6d6d;
+  font: 700 50px "Inter-Bold", sans-serif;
+}
+
+.piano-p {
+  color: #818181;
+  font: 500 20px "Inter-Medium", sans-serif;
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+  height: 60vh;
+  width: 80%;
+  padding: 50px;
+  border-radius: 33px;
+}
+
+.piano-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#volume {
+  height: 100%;
+  width: 90px;
+  border-radius: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
