@@ -32,8 +32,13 @@ main {
 
 #volume {
   height: 100%;
-  width: 90px;
+  width: 85px;
   border-radius: 100%;
+  background: rgb(238, 238, 238);
+  background: linear-gradient(90deg, rgb(238, 238, 238) 0%, rgb(252, 252, 252) 50%, rgb(219, 219, 219) 100%);
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: rgb(209, 209, 209);
 }
 
 /*# sourceMappingURL=main.css.map */
