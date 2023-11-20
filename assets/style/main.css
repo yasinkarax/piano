@@ -40,5 +40,10 @@ main {
   border-style: solid;
   border-color: rgb(209, 209, 209);
 }
+#volume div {
+  height: 20px;
+  width: 10px;
+  background: rgb(129, 129, 129);
+}
 
 /*# sourceMappingURL=main.css.map */
