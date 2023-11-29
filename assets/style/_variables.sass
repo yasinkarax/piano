@@ -3,6 +3,8 @@ $piano-bg-color: rgba(255, 255, 255, 1)
 $key-b: rgba(23, 23, 23, 1)
 $key-w: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%,rgba(255, 255, 255, 1.00) 100%)
 
+$keys-bg: #1a1a1a
+
 $piano-head-family: 'Inter-Bold', sans-serif
 $piano-head-color: #6d6d6d
 
@@ -12,3 +14,14 @@ $piano-p-family: 'Inter-Medium', sans-serif
 @mixin piano-text ($color, $font-weigh, $font-size, $font-family)
     color: $color
     font: $font-weigh $font-size $font-family
+
+@mixin key-w
+    border-color: #ffffff
+    border-radius: 0px 0px 12px 12px
+    width: 74px
+    height: 214px
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.30)
+    
+    background: linear-gradient(180deg, rgba(220, 220, 220, 1.00) 0%,rgba(247, 247, 247, 1.00) 100%)
+    border-radius: 0px 0px 10px 10px
+    
