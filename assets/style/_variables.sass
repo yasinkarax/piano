@@ -9,6 +9,8 @@ $piano-head-color: #6d6d6d
 $piano-p-color: #818181
 $piano-p-family: 'Inter-Medium', sans-serif
 
+$white-width: calc( 100% / 9 )
+
 @mixin piano-text ($color, $font-weigh, $font-size, $font-family)
     color: $color
     font: $font-weigh $font-size $font-family
@@ -24,6 +26,6 @@ $piano-p-family: 'Inter-Medium', sans-serif
     background: rgb(220,220,220) 
     background: linear-gradient(180deg, rgba(220,220,220,1) 0%, rgba(240,240,240,1) 100%) 
     height: 100%
-    width: calc( 100% / 9 )
+    width: $white-width
     border-radius: 0px 0px 12px 12px
     
