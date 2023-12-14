@@ -15,17 +15,25 @@ body
     
 main
     background-color: v.$piano-bg-color
-    height: 75vh
-    width: 63%
-    padding: 50px
+    width: 98%
+    height: 99vh
+    padding: 0 10px
     border-radius: 33px
     display: flex
     flex-direction: column
     justify-content: space-around
 
+@media (max-width: 700px )
+    main
+        width: 98vh
+        height: 99%
+        transform: rotate(90deg)
+
+
 .piano-info
     display: flex
     width: 100%
+    padding: 0 20px
     justify-content: space-between
 
 #volume-switch
