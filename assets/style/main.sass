@@ -75,15 +75,12 @@ main
         height: 100%
         width: 100%
         button
-            width: 5%
-            position: relative
-            left: calc( v.$white-width - 2.8%  )
+            @include v.key-b
+            
 
 [class*= w-]
     @include v.key-w
     
-[class*= b-]
-    @include v.key-b
     
 .keys > button:last-of-type, .keys > button:first-of-type
     border-radius: 12px 
