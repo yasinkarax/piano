@@ -8,27 +8,33 @@ body
     height: 100vh
 
 .piano-head
-    @include v.piano-text (v.$piano-head-color, 700, 50px, v.$piano-head-family)
+    @include v.piano-text (v.$piano-head-color, 700, 5rem, v.$piano-head-family)
 
-.piano-p
-    @include v.piano-text (v.$piano-p-color, 500, 20px , v.$piano-p-family)
+// .piano-p
+//     @include v.piano-text (v.$piano-p-color, 500, 20px , v.$piano-p-family)
     
 main
     background-color: v.$piano-bg-color
-    max-width: 1700px
-    width: 90%
-    height: 99vh
+    // max-width: 1700px
     padding: 0 10px
     border-radius: 33px
     display: flex
     flex-direction: column
     justify-content: space-around
+    width: 95vh
+    height: 99vw
+    transform: rotate(90deg)
+    position: absolute
 
-@media (max-width: 700px )
-    main
-        width: 98vh
-        height: 99vw
-        transform: rotate(90deg)
+// @media (min-width: 700px)
+//     main
+      max-width: 
+// @media (max-width: 700px )
+//     main
+      width: 95vh
+      height: 99vw
+      transform: rotate(90deg)
+      position: absolute
 
 
 .piano-info
@@ -38,8 +44,8 @@ main
     justify-content: space-between
 
 #volume-switch
-    height: 100%
-    width: 85px
+    height: 7rem
+    width: 7rem
     border-radius: 100%
     background: rgb(238,238,238)
     background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(252,252,252,1) 50%, rgba(219,219,219,1) 100%)
@@ -60,31 +66,7 @@ main
     left: 50%
     transform: translate(-50%, 0%)
     border-radius: 10px
-/*
-// .keys
-//     background: v.$keys-bg 
-//     border-radius: 21px 
-//     padding: 5.37px 
-//     width: 100%
-//     height: 65%
-//     display: flex
-//     gap: 5px
-//     flex-shrink: 1
-//     position: relative
-//     &-b
-//         position: absolute
-//         height: 100%
-//         width: 100%
-//         button
-//             @include v.key-b
-            
 
-// [class*= w-]
-//     @include v.key-w
-    
-    
-// .keys > button:last-of-type, .keys > button:first-of-type
-//     border-radius: 12px 
 .piano 
   display: grid
   grid-template-columns: repeat(27, 1fr)
@@ -93,12 +75,14 @@ main
   gap: 5px
   align-items: start
   width: 100%
+  height: 65%
   border-radius: 20px
   margin-inline: auto
   .white-button 
-    min-height: 500px
+    min-height: 50px
     background: #FFF
     grid-row: 1
+    height: 100%
     border-radius: 10px
     
     @for $i from 1 through 9

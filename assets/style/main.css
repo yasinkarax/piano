@@ -8,33 +8,22 @@ body {
 
 .piano-head {
   color: #6d6d6d;
-  font: 700 50px "Inter-Bold", sans-serif;
-}
-
-.piano-p {
-  color: #818181;
-  font: 500 20px "Inter-Medium", sans-serif;
+  font: 700 5rem "Inter-Bold", sans-serif;
 }
 
 main {
   background-color: rgb(255, 255, 255);
-  max-width: 1700px;
-  width: 90%;
-  height: 99vh;
   padding: 0 10px;
   border-radius: 33px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 95vh;
+  height: 99vw;
+  transform: rotate(90deg);
+  position: absolute;
 }
 
-@media (max-width: 700px) {
-  main {
-    width: 98vh;
-    height: 99vw;
-    transform: rotate(90deg);
-  }
-}
 .piano-info {
   display: flex;
   width: 100%;
@@ -43,8 +32,8 @@ main {
 }
 
 #volume-switch {
-  height: 100%;
-  width: 85px;
+  height: 7rem;
+  width: 7rem;
   border-radius: 100%;
   background: rgb(238, 238, 238);
   background: linear-gradient(90deg, rgb(238, 238, 238) 0%, rgb(252, 252, 252) 50%, rgb(219, 219, 219) 100%);
@@ -67,7 +56,6 @@ main {
   border-radius: 10px;
 }
 
-/* // .keys */
 .piano {
   display: grid;
   grid-template-columns: repeat(27, 1fr);
@@ -76,13 +64,15 @@ main {
   gap: 5px;
   align-items: start;
   width: 100%;
+  height: 65%;
   border-radius: 20px;
   margin-inline: auto;
 }
 .piano .white-button {
-  min-height: 500px;
+  min-height: 50px;
   background: #FFF;
   grid-row: 1;
+  height: 100%;
   border-radius: 10px;
 }
 .piano .white-button:nth-child(1) {
