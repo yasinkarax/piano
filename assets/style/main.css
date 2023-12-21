@@ -18,7 +18,8 @@ body {
 
 main {
   background-color: rgb(255, 255, 255);
-  width: 98%;
+  max-width: 1700px;
+  width: 90%;
   height: 99vh;
   padding: 0 10px;
   border-radius: 33px;
