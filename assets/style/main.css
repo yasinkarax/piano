@@ -8,13 +8,19 @@ body {
 
 .piano-head {
   color: #6d6d6d;
-  font: 700 5rem "Inter-Bold", sans-serif;
+  font: 700 2.6rem "Inter-Bold", sans-serif;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 377px) {
   .piano-head {
     color: #6d6d6d;
-    font: 700 8rem "Inter-Bold", sans-serif;
+    font: 700 3.4rem "Inter-Bold", sans-serif;
+  }
+}
+@media (min-width: 550px) {
+  .piano-head {
+    color: #6d6d6d;
+    font: 700 4.5rem "Inter-Bold", sans-serif;
   }
 }
 main {
@@ -24,7 +30,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 95vh;
+  width: 87vh;
   height: 99vw;
   transform: rotate(90deg);
   position: absolute;
@@ -48,12 +54,12 @@ main {
 
 @media (min-width: 950px) {
   .piano-info {
-    padding: 2rem 10rem;
+    padding: 2rem 6rem;
   }
 }
 #volume-switch {
-  height: 7rem;
-  width: 7rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 100%;
   background: rgb(238, 238, 238);
   background: linear-gradient(90deg, rgb(238, 238, 238) 0%, rgb(252, 252, 252) 50%, rgb(219, 219, 219) 100%);
@@ -65,15 +71,33 @@ main {
   box-shadow: 0px 12px 17px 3px rgba(129, 129, 129, 0.48);
 }
 
-@media (min-width: 950px) {
+@media (min-width: 280px) {
   #volume-switch {
-    height: 14rem;
-    width: 14rem;
+    height: 5rem;
+    width: 5rem;
+  }
+}
+@media (min-width: 377px) {
+  #volume-switch {
+    height: 7rem;
+    width: 7rem;
   }
 }
 @media (min-width: 550px) {
   #volume-switch {
     height: 9rem;
+    width: 9rem;
+  }
+}
+@media (min-width: 950px) {
+  #volume-switch {
+    height: 7rem;
+    width: 8rem;
+  }
+}
+@media (min-width: 1250px) {
+  #volume-switch {
+    height: 8rem;
     width: 9rem;
   }
 }
