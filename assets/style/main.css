@@ -52,8 +52,8 @@ main {
   }
 }
 #volume-switch {
-  height: 9rem;
-  width: 9rem;
+  height: 7rem;
+  width: 7rem;
   border-radius: 100%;
   background: rgb(238, 238, 238);
   background: linear-gradient(90deg, rgb(238, 238, 238) 0%, rgb(252, 252, 252) 50%, rgb(219, 219, 219) 100%);
