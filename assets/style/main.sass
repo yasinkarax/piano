@@ -8,12 +8,16 @@ body
     height: 100vh
 
 .piano-head
-    @include v.piano-text (v.$piano-head-color, 700, 5rem, v.$piano-head-family)
+    @include v.piano-text (v.$piano-head-color, 700, 2.6rem, v.$piano-head-family)
 
-@media (min-width: 950px)
+@media (min-width: 377px)
     .piano-head
-      @include v.piano-text (v.$piano-head-color, 700, 8rem, v.$piano-head-family)
-  
+      @include v.piano-text (v.$piano-head-color, 700, 3.4rem, v.$piano-head-family)
+
+@media (min-width: 550px)
+    .piano-head
+      @include v.piano-text (v.$piano-head-color, 700, 4.5rem, v.$piano-head-family)
+
 main
     background-color: v.$piano-bg-color
     // max-width: 1950px
@@ -22,7 +26,7 @@ main
     display: flex
     flex-direction: column
     justify-content: space-around
-    width: 95vh
+    width: 88vh
     height: 99vw
     transform: rotate(90deg)
     position: absolute
@@ -44,11 +48,11 @@ main
 
 @media (min-width: 950px) 
     .piano-info
-        padding: 2rem 10rem
+        padding: 2rem 6rem
         
 #volume-switch
-    height: 7rem
-    width: 7rem
+    height: 4rem
+    width: 4rem
     border-radius: 100%
     background: rgb(238,238,238)
     background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(252,252,252,1) 50%, rgba(219,219,219,1) 100%)
@@ -59,15 +63,32 @@ main
     -webkit-box-shadow: 0px 18px 17px 3px rgba(129,129,129,0.48)  
     box-shadow: 0px 12px 17px 3px rgba(129,129,129,0.48) 
 
-@media (min-width: 950px)
+@media (min-width: 280px)
     #volume-switch
-        height: 14rem
-        width: 14rem
+        height: 5rem
+        width: 5rem
+
+@media (min-width: 377px)
+    #volume-switch
+        height: 7rem
+        width: 7rem
 
 @media (min-width: 550px)
     #volume-switch
         height: 9rem
         width: 9rem
+        
+
+@media (min-width: 950px)
+    #volume-switch
+        height: 7rem
+        width: 8rem
+
+@media (min-width: 1250px)
+    #volume-switch
+        height: 8rem
+        width: 9rem
+
 
 #volume-start
     height: 20px
