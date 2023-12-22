@@ -71,6 +71,12 @@ main {
     width: 14rem;
   }
 }
+@media (min-width: 550px) {
+  #volume-switch {
+    height: 9rem;
+    width: 9rem;
+  }
+}
 #volume-start {
   height: 20px;
   width: 4px;
