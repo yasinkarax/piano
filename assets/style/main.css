@@ -30,7 +30,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 88vh;
+  width: 87vh;
   height: 99vw;
   transform: rotate(90deg);
   position: absolute;
