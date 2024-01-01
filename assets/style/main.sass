@@ -145,3 +145,22 @@ main
     &:nth-child(6 of .black-button) 
        grid-column: 24 / span 2
     
+
+// hidden key's keyboard letter
+.black-keyValue, .white-keyValue
+    display: none
+
+// show key's keyboard letter on desktop
+@media (min-width: 950px)
+    .black-keyValue, .white-keyValue
+        display: block
+        font-family: v.$keyLetters-family
+    
+    .black-keyValue
+        color: #fff
+        font-size: 2rem
+    
+    .white-keyValue
+        font-size: 3rem 
+        position: relative
+        top: 5rem
