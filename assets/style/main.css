@@ -183,4 +183,17 @@ main {
   grid-column: 24/span 2;
 }
 
+.black-keyValue, .white-keyValue {
+  display: none;
+}
+
+@media (min-width: 950px) {
+  .black-keyValue, .white-keyValue {
+    display: block;
+  }
+  .black-keyValue {
+    color: #fff;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
